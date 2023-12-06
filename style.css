@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: sans-serif;
+}
+header {
+    display: flex;
+    justify-content: end;
+}
+.burgerBar img{
+    display: none;
+    height: 2rem;
+    width: 2rem;
+}
+nav {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem ;
+}
+nav a {
+    color: black;
+    padding: 1.5rem;
+    border-radius: 20px;
+}
+nav a:hover{
+    background-color: red;
+    color: white;
+    
+}
+.active {
+    color: red;
+}
+.profile {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    gap: 2rem;
+    width:80vw;
+    margin: 0 auto;
+}
+.profile img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+
+    margin-top: 3rem;
+}
+.greeting {
+    margin-top: 1rem;
+}
+.greeting >* {
+    margin-top: 1rem;
+}
+.greeting button {
+    padding: 1rem;
+    background-color: rgb(191, 21, 21);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 5px 8px 10px 0px rgba(0,0,0,0.75);
+}
+.greeting button:hover {
+    scale: 1.2;
+    cursor: pointer;
+
+}
+.picProfile img {
+    height: 200px;
+    width: 200px;
+    padding: 1rem;
+}
+
+.recentPosts{
+    margin-top: 2rem;
+    background-color: rgb(208, 236, 236);
+    padding: 1rem 10vw;
+}
+.headrecent {
+    display: flex;
+    justify-content: space-between;  
+}
+.recentPosts h6 {
+    font-size: 1.3rem;
+    color: gray;
+}
+.containerBox {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.boxRecent {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    padding: 1.5rem;
+    gap: 1rem;
+}
+
+table :first-child {
+    border-right: 2px solid black;
+}
+
+.featureWorks {
+    width: 80vw;
+    margin: 1rem auto;
+ 
+}
+
+.itemfeatureWorks {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgb(180, 179, 179);
+}
+.itemfeatureWorks img {
+    border-radius: 5px;
+}
+
+.year {
+    display: flex;
+    justify-content:start;
+    align-items: baseline;
+}
+.year h4 {
+    background-color: black;
+    border-radius: 20px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: 10px;
+    color: white;
+}
+.logosocial img{
+    height: 2rem;
+    width: 2rem;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    height: 20vh;
+    align-items: center;
+}
+/* for blog page only*/
+.blogContainer {
+    width: 80vw;
+    margin: auto;
+}
+.itemBlog {
+    margin-top: 1rem;
+    border-bottom: 1px solid gray;
+    padding-bottom: 1rem;
+}
+.itemBlog >*{
+    margin-top: 1rem;
+}
+.itemBlog th{
+    padding: 0 2rem;
+}
+
+@media (max-width: 767px) {
+  nav {
+    display: none;
+  }
+  .burgerBar img{
+    display:flex;
+    justify-content: end;
+    margin-right: 1rem;
+  }
+  .burgerBar img:hover {
+    background-color: red;
+    border-radius: 5px ;
+  }
+  .profile, .greeting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .containerBox {
+    flex-direction: column;
+  }
+  .itemfeatureWorks{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .itemfeatureWorks img {
+    width: 200px;
+    height: 200px;
+  }
+}
